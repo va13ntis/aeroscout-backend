@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Float
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
@@ -12,5 +12,5 @@ class Airport(Base):
     name = Column(String)
     city = Column(String)
     country = Column(String)
-    latitude = Column(String)
-    longitude = Column(String)
+    latitude = Column(Float)
+    longitude = Column(Float)
